@@ -1,21 +1,9 @@
 import React, { useReducer } from 'react'
 
-const initialState = 0;
-const reducer = (currentState, action) => {
-  switch(action) {
-    case 'add_1':
-      return currentState + 1
-    case 'multiple_3':
-      return currentState * 3
-    case 'reset':
-      return initialState
-    default:
-      return currentState
-  }
-} 
+
 
 export const BasicReducer = () => {
-  const [count, dispatch] = useReducer(reducer, initialState)
+  
   return (
     <div>
       <div>Count:{count}</div>
